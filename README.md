@@ -1,2 +1,2 @@
 # manichellurii.github.io
-My personal blog
+Hi, I'm Mani Chelluri — Founder of DreamForge, passionate about AI, digital twins, and startup tech…
