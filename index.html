@@ -16,11 +16,38 @@
       scroll-behavior: smooth;
     }
     body {
+      display: flex;
       font-family: 'Inter', sans-serif;
       background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       color: #f3f3f3;
       line-height: 1.6;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 220px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      border-right: 2px solid #00f260;
+    }
+    nav a {
+      color: #57e3ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #00f260;
+    }
+    .content {
+      margin-left: 240px;
       padding: 2rem;
+      width: 100%;
     }
     header {
       text-align: center;
@@ -67,42 +94,51 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Mani Chelluri</h1>
-    <p>🚀 Founder of DreamForge & PulseDrive | Building the Next Evolution of Humanity</p>
-  </header>
+  <nav>
+    <a href="#about">🌌 About Me</a>
+    <a href="#projects">🧠 Projects</a>
+    <a href="#vision">🔥 Vision</a>
+    <a href="#contact">📬 Contact</a>
+  </nav>
 
-  <section>
-    <h2>🌌 About Me</h2>
-    <p>I am on a mission to blend Artificial Intelligence, Hardware Design, and Ancient Indian Wisdom into something humanity has never seen before. My projects like <strong>DreamForge</strong>, <strong>PulseDrive</strong>, and <strong>Ascendra</strong> aim to elevate us toward a Type I Civilization — a digital-physical renaissance.</p>
-  </section>
+  <div class="content">
+    <header>
+      <h1>Mani Chelluri</h1>
+      <p>🚀 Founder of DreamForge & PulseDrive | Building the Next Evolution of Humanity</p>
+    </header>
 
-  <section>
-    <h2>🧠 My Projects</h2>
-    <ul>
-      <li><strong>DreamForge</strong> – Digital Twin + AI Goal System for human potential</li>
-      <li><strong>PulseDrive</strong> – AI-powered Vehicle Disabling Tech via EM Control</li>
-      <li><strong>Ascendra</strong> – Consciousness Evolution Toolkit for the future</li>
-    </ul>
-  </section>
+    <section id="about">
+      <h2>🌌 About Me</h2>
+      <p>I am on a mission to blend Artificial Intelligence, Hardware Design, and Ancient Indian Wisdom into something humanity has never seen before. My projects like <strong>DreamForge</strong>, <strong>PulseDrive</strong>, and <strong>Ascendra</strong> aim to elevate us toward a Type I Civilization — a digital-physical renaissance.</p>
+    </section>
 
-  <section>
-    <h2>🔥 Vision</h2>
-    <p>To build cheat codes for the human condition — tools, systems, and simulations that empower the individual to level up their skills, life path, and destiny. I don’t just build software or circuits — I forge destiny with code and copper.</p>
-  </section>
+    <section id="projects">
+      <h2>🧠 My Projects</h2>
+      <ul>
+        <li><strong>DreamForge</strong> – Digital Twin + AI Goal System for human potential</li>
+        <li><strong>PulseDrive</strong> – AI-powered Vehicle Disabling Tech via EM Control</li>
+        <li><strong>Ascendra</strong> – Consciousness Evolution Toolkit for the future</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>📬 Connect With Me</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/mani-chelluri" target="_blank">LinkedIn</a> | 
-      <a href="https://github.com/your-github" target="_blank">GitHub</a> | 
-      <a href="mailto:manichelluri9@gmail.com">Email</a> | 
-      <a href="https://www.instagram.com/mani_chellurii?igsh=MWhuN3dlcmh3YnE2dg==" target="_blank">Instagram</a>
-    </p>
-  </section>
+    <section id="vision">
+      <h2>🔥 Vision</h2>
+      <p>To build cheat codes for the human condition — tools, systems, and simulations that empower the individual to level up their skills, life path, and destiny. I don’t just build software or circuits — I forge destiny with code and copper.</p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Mani Chelluri | Built with soul, purpose, and coffee.</p>
-  </footer>
+    <section id="contact">
+      <h2>📬 Connect With Me</h2>
+      <p>
+        <a href="https://www.linkedin.com/in/mani-chelluri" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/manichellurii" target="_blank">GitHub</a> | 
+        <a href="mailto:manichelluri9@gmail.com">Email</a> | 
+        <a href="https://www.instagram.com/mani_chellurii?igsh=MWhuN3dlcmh3YnE2dg==" target="_blank">Instagram</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Mani Chelluri | Built with soul, purpose, and coffee.</p>
+    </footer>
+  </div>
 </body>
 </html>
