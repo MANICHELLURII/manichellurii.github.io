@@ -8,6 +8,25 @@
   <meta name="author" content="Mani Chelluri">
   <title>Mani Chelluri | Dream Alchemist</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mani Chelluri",
+    "url": "https://your-domain.com",
+    "image": "https://your-avatar-url.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/mani-chelluri",
+      "https://www.instagram.com/mani_chellurii?igsh=MWhuN3dlcmh3YnE2dg==",
+      "mailto:manichelluri9@gmail.com"
+    ],
+    "jobTitle": "Founder of DreamForge & PulseDrive",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "DreamForge"
+    }
+  }
+  </script>
   <style>
     * {
       margin: 0;
@@ -40,9 +59,20 @@
       text-decoration: none;
       font-weight: bold;
       transition: 0.3s;
+      position: relative;
     }
-    nav a:hover {
-      color: #00f260;
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background-color: #00f260;
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
     }
     .content {
       margin-left: 240px;
@@ -130,7 +160,7 @@
       <h2>📬 Connect With Me</h2>
       <p>
         <a href="https://www.linkedin.com/in/mani-chelluri" target="_blank">LinkedIn</a> | 
-        <a href="https://github.com/manichellurii" target="_blank">GitHub</a> | 
+        <a href="https://github.com/your-github" target="_blank">GitHub</a> | 
         <a href="mailto:manichelluri9@gmail.com">Email</a> | 
         <a href="https://www.instagram.com/mani_chellurii?igsh=MWhuN3dlcmh3YnE2dg==" target="_blank">Instagram</a>
       </p>
